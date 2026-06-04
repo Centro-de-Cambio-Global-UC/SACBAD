@@ -1,13 +1,12 @@
-# SACBAD — Hydroclimatic supplementary repository
+# SACBAD
 
-Self-contained reproduction of the manuscript pipeline: frozen inputs, one command, no database and **no Shiny app**.
+Code and data accompanying the paper **"Assessing the Complex Nature of Climate Change Risks in Semi-Arid Coastal Basins"**. This repository contains datasets, analysis workflows, and scripts used to evaluate climate risk propagation, ecohydrological responses, and adaptation dynamics in semi-arid coastal basins of central Chile during the megadrought.
 
-> **Upload this folder** (`SACBAD_github/`) to GitHub as the repository root. The development workspace (`analisis_series_climaticas/`, Shiny, backend, explorations) stays local.
+Self-contained reproduction of the hydroclimatic pipeline: frozen inputs, one command, no database and **no Shiny app**.
 
 ## Repository layout
 
 ```
-SACBAD_github/
 ├── run_all.R          # Single entry point (core pipeline)
 ├── Input/             # Frozen CSV inputs (versioned)
 │   └── extended/      # Optional vectors for extended workflows
@@ -20,19 +19,20 @@ SACBAD_github/
 
 ## Citation
 
-Add the paper citation and DOI when available (`CITATION.cff`).
+See `CITATION.cff` for software citation. Add the paper DOI when available.
 
 ## Requirements
 
 - R ≥ 4.2
 - Recommended: `renv::restore()` using `Scripts/renv.lock`
-- ~50 MB inputs, ~200–500 MB disk for full outputs
+- ~5 MB versioned inputs, ~200–500 MB disk for full outputs
 - No PostgreSQL or VPN
 
 ## Quick start
 
 ```bash
-cd SACBAD_github
+git clone https://github.com/Centro-de-Cambio-Global-UC/SACBAD.git
+cd SACBAD
 Rscript run_all.R
 ```
 
