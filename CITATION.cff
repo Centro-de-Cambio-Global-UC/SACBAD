@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "SACBAD hydroclimatic supplementary pipeline"
+message: "If you use this software, please cite it as below."
+authors:
+  - name: "SACBAD team"
+repository-code: "https://github.com/Centro-de-Cambio-Global-UC/SACBAD"
+license: MIT
+version: 1.0.0
+date-released: 2026-06-04

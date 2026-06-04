@@ -1,0 +1,30 @@
+# Generated outputs
+Output/**/*
+!Output/.gitkeep
+
+# NDVI downloaded by user (keep placeholder README only)
+Input/external/ndvi/*
+!Input/external/ndvi/README.txt
+
+# Local workbooks for Zenodo merge scripts (not versioned; place paths via CLI args)
+
+# Version Input/extended vectors (geojson, shapefiles)
+!Input/extended/
+!Input/extended/**/*
+Input/extended/merge_excel/*.xlsx
+Input/extended/ndvi/
+
+# renv library (lockfile is versioned under Scripts/)
+Scripts/renv/library/
+Scripts/renv/local/
+Scripts/renv/cellar/
+
+# R / OS
+.Rproj.user/
+.Rhistory
+.RData
+*.log
+
+# Never commit secrets
+*.env
+credenciales*

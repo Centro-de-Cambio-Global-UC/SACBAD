@@ -1,0 +1,10 @@
+Reference environment for SACBAD supplementary pipeline.
+Regenerate after renv::restore():
+  Rscript -e "writeLines(capture.output(sessionInfo()), 'docs/SESSION_INFO.txt')"
+
+R version 4.5.2 (2025-10-31)
+Platform: x86_64-w64-mingw32/x64
+
+Key packages (see Scripts/renv.lock):
+  dplyr 1.1.4, tidyr 1.3.1, missForest 1.6.1, SPEI 1.8.1,
+  readxl 1.4.5, writexl 1.5.4

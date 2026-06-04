@@ -1,0 +1,14 @@
+# Optional Python stack for Scripts/extended/ (install in a venv)
+# Wetlands / GEE
+earthengine-api
+geemap
+geopandas
+rasterio
+scipy
+opencv-python
+matplotlib
+
+# VIIRS / raster utilities (notebooks may need additional packages)
+fiona
+numpy
+pandas
