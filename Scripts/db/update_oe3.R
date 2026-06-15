@@ -32,6 +32,12 @@ writeData(wb, "Sites", x = data.frame(ID_Subcuenca_SACBAD = sites_x$ID_Subcuenca
           startCol = new_col_idx, startRow = 1, colNames = TRUE)
 
 # --- Estaciones_automaticas sheet ---
+# Add ID_Subcuenca_SACBAD (natural code) so it links to the Sites sheet column.
+ea$ID_Subcuenca_SACBAD <- sub("^SUBB-", "", ea$subbasin_id)
+sub_pos <- match("subbasin_id", names(ea))
+ord <- append(setdiff(names(ea), "ID_Subcuenca_SACBAD"),
+              "ID_Subcuenca_SACBAD", after = sub_pos)
+ea <- ea[, ord]
 if ("Estaciones_automaticas" %in% names(wb)) removeWorksheet(wb, "Estaciones_automaticas")
 addWorksheet(wb, "Estaciones_automaticas")
 writeData(wb, "Estaciones_automaticas", ea)
