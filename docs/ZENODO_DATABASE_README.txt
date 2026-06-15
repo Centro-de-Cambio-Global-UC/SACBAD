@@ -191,9 +191,14 @@ Requires Windows and Microsoft Excel.
 Related repository
 ================================================================================
 
-Reproducible R pipeline: SACBAD_github (GitHub / separate Zenodo software record).
+Reproducible R pipeline: SACBAD_github (https://github.com/Centro-de-Cambio-Global-UC/SACBAD).
 Hydroclimate CSVs are frozen in that repo; NDVI stacks and this full database
 live on this data deposit.
+
+Project master archive (OneDrive): uc365_SACBAD Anillo 220055 - Database
+includes an additive catalog at 00_Database_Registry/ (relational CSV index,
+geospatial inventory, MANIFEST checksums). Zenodo mirrors analytical products
+for public citation; field monitoring data remains in the uc365 archive.
 
 
 ================================================================================
